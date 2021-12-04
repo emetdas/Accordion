@@ -1,0 +1,39 @@
+#  Web Development
+```svg arrow
+   <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-chevron-down"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+```
+----------
+ Web development is the work involved in developing a Web site for the
+ Internet or an intranet. Web development can range from developing a
+ simple single static page of plain text to complex web applications,
+ electronic businesses, and social network services
+
+-----------
+### font
+```
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+font-family: 'Rubik', sans-serif;
+```
+
+```variables
+  --bg-primary: rgb(104, 91, 223);
+  --white: rgb(255, 255, 255);
+  --gray: rgb(161, 161, 161);
+```
+
+
+

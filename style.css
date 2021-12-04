@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+:root {
+  --bg-primary: rgb(104, 91, 223);
+  --white: rgb(255, 255, 255);
+  --gray: rgb(161, 161, 161);
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Rubik', sans-serif;
+}
+details {
+  margin-top: 0rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 42rem;
+  width: calc(100% - 2rem);
+  box-shadow: 0 0 0.1rem var(--gray);
+}
+details[open] summary ~ * {
+  animation: open 1s ease-in-out;
+}
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details summary svg {
+  position: absolute;
+  color: var(--white);
+  right: 1rem;
+  transition: all 0.3s ease;
+  stroke-width: 0.3rem;
+}
+details summary {
+  color: var(--white);
+  background: var(--bg-primary);
+  padding: 0.5rem 1rem;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  font-size: 2rem;
+  font-weight: 500;
+  border-bottom: 0.1rem solid var(--gray);
+}
+details[open] summary svg {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+.summary-content {
+  padding: 1rem;
+}
+.paragraph {
+  font-size: 1.7rem;
+  text-align: justify;
+  line-height: 2.5rem;
+  word-spacing: 0.1rem;
+}
